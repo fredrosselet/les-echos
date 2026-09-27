@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Echos - Contact</title>
+    <meta name="description" content="Music for the viola da gamba">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <p><a href="../">Les Echos</a></p>
+        <nav>
+            <ul>
+                <li><a href="../">HOME</a></li>
+                <li><a href="../media/">MEDIA</a></li>
+                <li><a href="../about/">ABOUT</a></li>
+                <li><a href="../contact/">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="contact-content">
+        <form action="mailto:fred.rosselet@gmail.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" maxlength="500"required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</main>
+<footer>
+    <p>&copy; 2026 Les Echos</p>
+</footer>
+</body>
+</html>
