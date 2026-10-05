@@ -11,10 +11,9 @@
 <body>
 <header>
     <div class="header-content">
-        <p><a href="../">Les Echos</a></p>
+        <p><a href="../media/">Les Echos</a></p>
         <nav>
             <ul>
-                <li><a href="../">HOME</a></li>
                 <li><a href="../media/">MEDIA</a></li>
                 <li><a href="../about/">ABOUT</a></li>
                 <li><a href="../contact/">CONTACT</a></li>
@@ -24,7 +23,10 @@
 </header>
 <main>
     <div class="contact-content">
-        <form action="mailto:fred.rosselet@gmail.com" method="post" enctype="text/plain">
+        <form id="contact-form">
+            <input type="hidden" name="access_key" value="061ca041-07e9-438d-af1f-0b80d8b38d9c">
+            <input type="checkbox" name="botcheck" style="display: none;">
+
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -32,12 +34,14 @@
             <input type="email" id="email" name="email" required>
 
             <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" maxlength="500"required></textarea>
+            <textarea id="message" name="message" rows="4" maxlength="500" required></textarea>
 
             <button type="submit">Send Message</button>
+            <p id="contact-status"></p>
         </form>
     </div>
 </main>
+<script src="../assets/js/contact.js"></script>
 <footer>
     <p>&copy; 2026 Les Echos</p>
 </footer>

@@ -303,3 +303,20 @@ footer {
 .contact-content button:hover {
     background: #5e0404e5;
 }
+
+.contact-content button:disabled {
+    opacity: 0.6;
+    cursor: default;
+}
+
+#contact-status {
+    height: 20px;
+}
+
+#contact-status.success {
+    color: #2a7a2a;
+}
+
+#contact-status.error {
+    color: #6a0707e5;
+}
